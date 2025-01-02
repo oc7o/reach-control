@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_map/flutter_map.dart';
-import 'package:latlong2/latlong.dart';
+
 import 'package:flutter_libserialport/flutter_libserialport.dart';
 import 'pages/settings.dart';
 import 'pages/home.dart';
+import 'package:reach_control/pages/map.dart';
 
 void main() {
+  List<String> availablePorts;
+  availablePorts = SerialPort.availablePorts;
+  print(availablePorts);
+
   runApp(const MyApp());
 }
 
@@ -39,6 +43,7 @@ class MyApp extends StatelessWidget {
         home: const HomePage(title: 'Reach-Control'),
         routes: {
           '/settings': (context) => const SettingsPage(),
+          '/map': (context) => const MapPage(),
         });
   }
 }
