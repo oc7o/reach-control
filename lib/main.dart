@@ -1,16 +1,25 @@
 import 'package:flutter/material.dart';
 
+import 'package:provider/provider.dart';
+import 'mqtt_provider.dart';
+
 import 'package:flutter_libserialport/flutter_libserialport.dart';
 import 'pages/settings.dart';
 import 'pages/home.dart';
-import 'package:reach_control/pages/map.dart';
+import 'pages/map.dart';
+import 'pages/com.dart';
 
 void main() {
   List<String> availablePorts;
   availablePorts = SerialPort.availablePorts;
   print(availablePorts);
 
-  runApp(const MyApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (_) => MqttProvider(),
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -20,7 +29,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
+        title: 'REACH CONTROL',
         theme: ThemeData(
           // This is the theme of your application.
           //
@@ -44,6 +53,7 @@ class MyApp extends StatelessWidget {
         routes: {
           '/settings': (context) => const SettingsPage(),
           '/map': (context) => const MapPage(),
+          '/com': (context) => const ComPage(),
         });
   }
 }

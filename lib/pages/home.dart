@@ -1,5 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:reach_control/components/reach_navigation_bar.dart';
+import 'package:reach_control/components/connected_indicator.dart';
+import 'package:reach_control/components/test_gps_widget.dart';
+import '../mqtt_provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+import 'package:provider/provider.dart';
+
+import 'package:flutter_vlc_player/flutter_vlc_player.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key, required this.title});
@@ -20,6 +28,54 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  var brokerText = '';
+  var brokerPortText = '';
+  var brokerTopicText = '';
+
+  late VlcPlayerController _vlcController;
+  bool _isControllerInitialized = false;
+  bool holdPosition = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _vlcController = VlcPlayerController.network(
+      'http://127.0.0.1:8080/?action=stream',
+      autoPlay: true,
+      options: VlcPlayerOptions(),
+    );
+
+    // Wait for initialization before using the controller
+    _vlcController.initialize().then((_) {
+      setState(() {
+        _isControllerInitialized = true;
+      });
+    });
+  }
+
+  Future<void> _loadTextFromPreferences() async {
+    final prefs = await SharedPreferences.getInstance();
+    brokerText = prefs.getString('BROKER') ?? '';
+    brokerPortText = prefs.getString('BROKER_PORT') ?? '';
+    brokerTopicText = prefs.getString('BROKER_TOPIC') ?? '';
+  }
+
+  Future<void> _takeUp() async {
+    await _loadTextFromPreferences();
+    if (!mounted) return;
+
+    final mqttProvider = Provider.of<MqttProvider>(context, listen: false);
+    mqttProvider.publishMessage(brokerTopicText, 'takeUp');
+  }
+
+  Future<void> _land() async {
+    await _loadTextFromPreferences();
+    if (!mounted) return;
+
+    final mqttProvider = Provider.of<MqttProvider>(context, listen: false);
+    mqttProvider.publishMessage(brokerTopicText, 'land');
+  }
+
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -33,8 +89,42 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(
           title: Text(widget.title),
         ),
-        body: const Center(
-          child: Text('Hello, World!'),
+        body: Center(
+          child: Column(
+            children: [
+              const Text('Hello, World!'),
+              ElevatedButton(
+                onPressed: _takeUp,
+                child: const Text('⬆️ Take Up! ⬆️'),
+              ),
+              ElevatedButton(
+                onPressed: _land,
+                child: const Text('⬇️ Land! ⬇️'),
+              ),
+              Checkbox(
+                checkColor: Colors.white,
+                value: holdPosition,
+                onChanged: (bool? value) {
+                  setState(() {
+                    holdPosition = value!;
+                  });
+                },
+              ),
+              Center(
+                child: _isControllerInitialized
+                    ? VlcPlayer(
+                        controller: _vlcController,
+                        aspectRatio: 16 / 9,
+                        placeholder: Center(child: Text("ASDF")),
+                      )
+                    : const Center(
+                        child:
+                            CircularProgressIndicator()), // Show loading until initialized
+              ), // TODO: make BROKER_IP
+              const ConnectionIndicator(),
+              const TestGpsWidget()
+            ],
+          ),
         ),
         bottomNavigationBar: const ReachNavigationBar());
 
