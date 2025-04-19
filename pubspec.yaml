@@ -41,6 +41,8 @@ dependencies:
   mqtt_client: ^10.3.0
   shared_preferences: ^2.3.5
   provider: ^6.1.2
+  webview_flutter: ^4.10.0
+  flutter_vlc_player: ^7.4.2
 
 dev_dependencies:
   flutter_test:
