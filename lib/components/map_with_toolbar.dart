@@ -94,6 +94,24 @@ class _MapWithToolbarState extends State<MapWithToolbar> {
             ),
           )));
     }
+    mqttProvider.found_persons.forEach((person) => {
+          if (person["vehicle_access"])
+            {
+              markers.add(Marker(
+                  point: LatLng(person!['lat'], person!['lon']),
+                  width: 80,
+                  height: 80,
+                  child: const CircleAvatar(
+                    radius: 30,
+                    backgroundColor: Colors.white,
+                    child: Icon(
+                      Icons.person,
+                      color: Colors.blue,
+                      size: 50.0,
+                    ),
+                  )))
+            }
+        });
 
     return Scaffold(
         appBar: AppBar(

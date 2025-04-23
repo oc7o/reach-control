@@ -31,6 +31,10 @@ class MqttProvider extends ChangeNotifier {
   Map<String, dynamic>? _lastGps;
   Map<String, dynamic>? get gpsPosition => _lastGps;
 
+  // found persons
+  final List<Map<String, dynamic>> _found_persons = [];
+  List<Map<String, dynamic>> get found_persons => _found_persons;
+
   Future<void> connectAndSubscribe(String brokerIP, String topic) async {
     if (_connectionState == MqttConnectionState.connecting ||
         _connectionState == MqttConnectionState.connected) {
@@ -137,6 +141,18 @@ class MqttProvider extends ChangeNotifier {
 
         case 'ping':
           debugPrint('💡 Drone is online');
+          break;
+
+        case 'found_person':
+          debugPrint("🔎 found person!");
+          Map<String, dynamic> personInfo = {};
+
+          personInfo["vehicle_access"] = data["vehicle_access"];
+          personInfo["lat"] = data["lat"];
+          personInfo["lon"] = data["lon"];
+          personInfo["found_timestamp"] = data["found_timestamp"];
+          _found_persons.add(personInfo);
+          notifyListeners();
           break;
 
         default:
