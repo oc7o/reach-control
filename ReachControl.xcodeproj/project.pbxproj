@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		068644612ED326FD0033814A /* test_server.py in Resources */ = {isa = PBXBuildFile; fileRef = 068644602ED326EE0033814A /* test_server.py */; };
+		06C637492EB7E372000DC036 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C637482EB7E372000DC036 /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06C447972E95A9FE0077B34F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06C447812E95A9FB0077B34F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06C447882E95A9FB0077B34F;
+			remoteInfo = ReachControl;
+		};
+		06C447A12E95A9FE0077B34F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06C447812E95A9FB0077B34F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06C447882E95A9FB0077B34F;
+			remoteInfo = ReachControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		068644602ED326EE0033814A /* test_server.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_server.py; sourceTree = "<group>"; };
+		06C447892E95A9FB0077B34F /* ReachControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReachControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06C447962E95A9FE0077B34F /* ReachControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReachControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06C447A02E95A9FE0077B34F /* ReachControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReachControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06C637482EB7E372000DC036 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		068644622ED3272E0033814A /* proto */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = proto;
+			sourceTree = "<group>";
+		};
+		06C4478B2E95A9FB0077B34F /* ReachControl */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ReachControl;
+			sourceTree = "<group>";
+		};
+		06C447992E95A9FE0077B34F /* ReachControlTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ReachControlTests;
+			sourceTree = "<group>";
+		};
+		06C447A32E95A9FE0077B34F /* ReachControlUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ReachControlUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06C447862E95A9FB0077B34F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06C447932E95A9FE0077B34F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06C4479D2E95A9FE0077B34F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06C447802E95A9FB0077B34F = {
+			isa = PBXGroup;
+			children = (
+				068644622ED3272E0033814A /* proto */,
+				068644602ED326EE0033814A /* test_server.py */,
+				06C637482EB7E372000DC036 /* Constants.swift */,
+				06C4478B2E95A9FB0077B34F /* ReachControl */,
+				06C447992E95A9FE0077B34F /* ReachControlTests */,
+				06C447A32E95A9FE0077B34F /* ReachControlUITests */,
+				06C4478A2E95A9FB0077B34F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06C4478A2E95A9FB0077B34F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06C447892E95A9FB0077B34F /* ReachControl.app */,
+				06C447962E95A9FE0077B34F /* ReachControlTests.xctest */,
+				06C447A02E95A9FE0077B34F /* ReachControlUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06C447882E95A9FB0077B34F /* ReachControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06C447AA2E95A9FE0077B34F /* Build configuration list for PBXNativeTarget "ReachControl" */;
+			buildPhases = (
+				06C447852E95A9FB0077B34F /* Sources */,
+				06C447862E95A9FB0077B34F /* Frameworks */,
+				06C447872E95A9FB0077B34F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				068644622ED3272E0033814A /* proto */,
+				06C4478B2E95A9FB0077B34F /* ReachControl */,
+			);
+			name = ReachControl;
+			packageProductDependencies = (
+			);
+			productName = ReachControl;
+			productReference = 06C447892E95A9FB0077B34F /* ReachControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		06C447952E95A9FE0077B34F /* ReachControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06C447AD2E95A9FE0077B34F /* Build configuration list for PBXNativeTarget "ReachControlTests" */;
+			buildPhases = (
+				06C447922E95A9FE0077B34F /* Sources */,
+				06C447932E95A9FE0077B34F /* Frameworks */,
+				06C447942E95A9FE0077B34F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06C447982E95A9FE0077B34F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				06C447992E95A9FE0077B34F /* ReachControlTests */,
+			);
+			name = ReachControlTests;
+			packageProductDependencies = (
+			);
+			productName = ReachControlTests;
+			productReference = 06C447962E95A9FE0077B34F /* ReachControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		06C4479F2E95A9FE0077B34F /* ReachControlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06C447B02E95A9FE0077B34F /* Build configuration list for PBXNativeTarget "ReachControlUITests" */;
+			buildPhases = (
+				06C4479C2E95A9FE0077B34F /* Sources */,
+				06C4479D2E95A9FE0077B34F /* Frameworks */,
+				06C4479E2E95A9FE0077B34F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06C447A22E95A9FE0077B34F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				06C447A32E95A9FE0077B34F /* ReachControlUITests */,
+			);
+			name = ReachControlUITests;
+			packageProductDependencies = (
+			);
+			productName = ReachControlUITests;
+			productReference = 06C447A02E95A9FE0077B34F /* ReachControlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06C447812E95A9FB0077B34F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					06C447882E95A9FB0077B34F = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					06C447952E95A9FE0077B34F = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = 06C447882E95A9FB0077B34F;
+					};
+					06C4479F2E95A9FE0077B34F = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = 06C447882E95A9FB0077B34F;
+					};
+				};
+			};
+			buildConfigurationList = 06C447842E95A9FB0077B34F /* Build configuration list for PBXProject "ReachControl" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 06C447802E95A9FB0077B34F;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0686445F2ED3265F0033814A /* XCRemoteSwiftPackageReference "grpc-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 06C4478A2E95A9FB0077B34F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06C447882E95A9FB0077B34F /* ReachControl */,
+				06C447952E95A9FE0077B34F /* ReachControlTests */,
+				06C4479F2E95A9FE0077B34F /* ReachControlUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06C447872E95A9FB0077B34F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068644612ED326FD0033814A /* test_server.py in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06C447942E95A9FE0077B34F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06C4479E2E95A9FE0077B34F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06C447852E95A9FB0077B34F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C637492EB7E372000DC036 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06C447922E95A9FE0077B34F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06C4479C2E95A9FE0077B34F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06C447982E95A9FE0077B34F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06C447882E95A9FB0077B34F /* ReachControl */;
+			targetProxy = 06C447972E95A9FE0077B34F /* PBXContainerItemProxy */;
+		};
+		06C447A22E95A9FE0077B34F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06C447882E95A9FB0077B34F /* ReachControl */;
+			targetProxy = 06C447A12E95A9FE0077B34F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06C447A82E95A9FE0077B34F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		06C447A92E95A9FE0077B34F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		06C447AB2E95A9FE0077B34F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.sloow.ReachControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		06C447AC2E95A9FE0077B34F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.sloow.ReachControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		06C447AE2E95A9FE0077B34F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.sloow.ReachControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReachControl.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ReachControl";
+			};
+			name = Debug;
+		};
+		06C447AF2E95A9FE0077B34F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.sloow.ReachControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReachControl.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ReachControl";
+			};
+			name = Release;
+		};
+		06C447B12E95A9FE0077B34F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.sloow.ReachControlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ReachControl;
+			};
+			name = Debug;
+		};
+		06C447B22E95A9FE0077B34F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.sloow.ReachControlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ReachControl;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06C447842E95A9FB0077B34F /* Build configuration list for PBXProject "ReachControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06C447A82E95A9FE0077B34F /* Debug */,
+				06C447A92E95A9FE0077B34F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06C447AA2E95A9FE0077B34F /* Build configuration list for PBXNativeTarget "ReachControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06C447AB2E95A9FE0077B34F /* Debug */,
+				06C447AC2E95A9FE0077B34F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06C447AD2E95A9FE0077B34F /* Build configuration list for PBXNativeTarget "ReachControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06C447AE2E95A9FE0077B34F /* Debug */,
+				06C447AF2E95A9FE0077B34F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06C447B02E95A9FE0077B34F /* Build configuration list for PBXNativeTarget "ReachControlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06C447B12E95A9FE0077B34F /* Debug */,
+				06C447B22E95A9FE0077B34F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0686445F2ED3265F0033814A /* XCRemoteSwiftPackageReference "grpc-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/grpc/grpc-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+	};
+	rootObject = 06C447812E95A9FB0077B34F /* Project object */;
+}
