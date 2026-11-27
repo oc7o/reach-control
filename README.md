@@ -1,12 +1,14 @@
 # reach-control
 
-Native SwiftUI ground station client for the **REACH** autonomous drone platform.
+Native SwiftUI ground station client for the **REACH** autonomous drone platform (WIP).
 
 ## Overview
 
 - Reads physical gamepad / controller input via Apple's `GameController` framework (`ControllerManager.swift`)
-- Streams controller inputs over gRPC (`ControllerGRPCClient.swift`) to [`reach-core`](https://github.com/oc7o/reach-core)
+- Streams controller inputs over gRPC (`ControllerGRPCClient.swift`)
 - Includes a lightweight Python test receiver (`test_server.py`) for local development without hardware
+
+> **Note (WIP):** `ControllerGRPCClient.swift` and `test_server.py` currently target an earlier `controller.proto` schema and are in the process of migrating to the shared [`reach-proto`](https://github.com/oc7o/reach-proto) (`drone.proto`) definitions used by [`reach-core`](https://github.com/oc7o/reach-core).
 
 ## Legacy Flutter Client
 
